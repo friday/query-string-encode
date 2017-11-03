@@ -1,0 +1,38 @@
+{
+	"name": "query-string-encode",
+	"version": "0.1.0",
+	"description": "Minimal query string encoding, supporting nested objects",
+	"author": "Albin Larsson",
+	"license": "MIT",
+	"repository": "git+https://github.com/friday/query-string-encode.git",
+	"main": "dist/query-string-encode.umd.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc && rollup --config; rimraf dist/index.js*",
+		"lint": "tsc --noEmit && tslint --project tsconfig.json --format stylish",
+		"prebuild": "rimraf dist",
+		"pretest": "npm run build",
+		"posttest": "npm run lint",
+		"test": "jest"
+	},
+	"keywords": [
+		"encode",
+		"param",
+		"query",
+		"querystring",
+		"string",
+		"stringify",
+		"typescript"
+	],
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"jest-cli": "^21.2.1",
+		"rimraf": "^2.6.1",
+		"rollup": "^0.50.0",
+		"rollup-plugin-uglify": "^2.0.0",
+		"tslint": "^5.6.0",
+		"typescript": "^2.4.0"
+	}
+}

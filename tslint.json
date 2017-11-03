@@ -1,0 +1,10 @@
+{
+	"extends": ["tslint:recommended"],
+	"rules": {
+		"arrow-parens": false,
+		"arrow-return-shorthand": true,
+		"indent": [true, "tabs"],
+		"no-shadowed-variable": false,
+		"prefer-const": true
+	}
+}
