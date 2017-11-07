@@ -3,6 +3,12 @@ Tiny query string serializer. Handles nested objects and arrays. Useful in combi
 
 Similar to jQuery's `$.param` and [`qs.stringify()`](https://github.com/ljharb/qs#stringifying)
 
+## Installation
+
+`npm i query-string-encode`
+or
+`yarn add query-string-encode`
+
 ## Usage
 ```js
 const queryStringEncode = require('query-string-encode');
