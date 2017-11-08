@@ -4,9 +4,9 @@
 ![license](https://img.shields.io/github/license/friday/query-string-encode.svg)
 
 # query-string-encode
-Tiny query string serializer (~20 lines of code). Handles nested objects and arrays. Useful in combination with [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch) and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest for example)
+Tiny query string serializer (~20 lines of code). Handles nested objects and arrays. Useful in combination with [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch) and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) (for example).
 
-Similar to jQuery's `$.param` and [`qs.stringify()`](https://github.com/ljharb/qs#stringifying)
+Similar to jQuery's [`$.param`](http://api.jquery.com/jquery.param/) and [`qs.stringify()`](https://github.com/ljharb/qs#stringifying)
 
 ## Installation
 
