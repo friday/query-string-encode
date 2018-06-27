@@ -13,6 +13,8 @@
 		"prebuild": "rimraf dist",
 		"pretest": "npm run build",
 		"posttest": "npm run lint",
+		"preversion": "npm test",
+		"postversion": "git push && git push --tags",
 		"test": "jest"
 	},
 	"keywords": [
