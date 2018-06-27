@@ -1,4 +1,4 @@
-import uglify from 'rollup-plugin-uglify';
+import {terser} from 'rollup-plugin-terser';
 
 const name = 'queryStringEncode';
 const pkg = require('./package');
@@ -8,9 +8,9 @@ const banner = `/*! ${name} v${pkg.version} | (c) ${new Date().getFullYear()} ${
 
 const comments = (node, {type, value}) => type === "comment2" && value.startsWith('!'); // keep banner when minifying
 const config = (format, {minify = false, isDefault = false} = {}) => {
-	const output = {amd, format, banner, sourcemap: minify, file: `dist/${pkg.name}${isDefault ? '' :  `.${format}`}${minify ? '.min' : ''}.js`};
-	const plugins = minify ? [uglify({output: {comments}})] : [];
-	return {name, input, output, plugins};
+	const output = {name, amd, format, banner, sourcemap: minify, file: `dist/${pkg.name}${isDefault ? '' :  `.${format}`}${minify ? '.min' : ''}.js`};
+	const plugins = minify ? [terser({output: {comments}})] : [];
+	return {input, output, plugins};
 };
 
 export default [
