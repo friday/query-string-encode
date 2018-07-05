@@ -1,8 +1,8 @@
-[![NPM](https://img.shields.io/npm/v/query-string-encode.svg)](https://www.npmjs.com/package/query-string-encode) [![Greenkeeper badge](https://badges.greenkeeper.io/friday/query-string-encode.svg)](https://greenkeeper.io/)
-![travis](https://img.shields.io/travis/friday/query-string-encode.svg)
-![devDependency Status](https://img.shields.io/david/dev/friday/query-string-encode.svg)
-![size](https://img.shields.io/github/size/friday/query-string-encode/index.ts.svg)
-![license](https://img.shields.io/github/license/friday/query-string-encode.svg)
+[![NPM](https://img.shields.io/npm/v/query-string-encode.svg)](https://www.npmjs.com/package/query-string-encode)
+[![Greenkeeper badge](https://badges.greenkeeper.io/friday/query-string-encode.svg)](https://greenkeeper.io/)
+[![travis](https://img.shields.io/travis/friday/query-string-encode.svg)](https://travis-ci.org/friday/wholescreen/branches)
+[![size](https://img.shields.io/github/size/friday/query-string-encode/index.ts.svg)](https://github.com/friday/query-string-encode/blob/master/index.ts)
+[![license](https://img.shields.io/github/license/friday/query-string-encode.svg)](https://github.com/friday/query-string-encode/blob/master/LICENCE)
 
 # query-string-encode
 Tiny query string serializer (~20 lines of code). Handles nested objects and arrays. Useful in combination with [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch) and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) (for example).
