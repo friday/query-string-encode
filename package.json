@@ -5,7 +5,9 @@
 	"author": "Albin Larsson",
 	"license": "MIT",
 	"repository": "git+https://github.com/friday/query-string-encode.git",
-	"main": "dist/query-string-encode.umd.js",
+	"browser": "dist/query-string-encode.min.js",
+	"main": "dist/query-string-encode",
+	"module": "dist/query-string-encode.mjs",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsc && rollup --config; rimraf dist/index.js*",
