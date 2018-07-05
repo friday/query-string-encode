@@ -1,4 +1,4 @@
-[![NPM](https://img.shields.io/npm/v/query-string-encode.svg)](https://www.npmjs.com/package/query-string-encode)
+[![NPM](https://img.shields.io/npm/v/query-string-encode.svg)](https://www.npmjs.com/package/query-string-encode) [![Greenkeeper badge](https://badges.greenkeeper.io/friday/query-string-encode.svg)](https://greenkeeper.io/)
 ![travis](https://img.shields.io/travis/friday/query-string-encode.svg)
 ![devDependency Status](https://img.shields.io/david/dev/friday/query-string-encode.svg)
 ![size](https://img.shields.io/github/size/friday/query-string-encode/index.ts.svg)
