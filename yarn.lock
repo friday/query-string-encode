@@ -2,7 +2,13 @@
 # yarn lockfile v1
 
 
-"@babel/code-frame@^7.0.0-beta.35", "@babel/code-frame@^7.0.0-beta.47":
+"@babel/code-frame@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
+  dependencies:
+    "@babel/highlight" "^7.0.0"
+
+"@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.51.tgz#bd71d9b192af978df915829d39d4094456439a0c"
   dependencies:
@@ -15,6 +21,14 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
+
+"@babel/highlight@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0.tgz#f710c38c8d458e6dd9a201afb637fcb781ce99e4"
+  dependencies:
+    chalk "^2.0.0"
+    esutils "^2.0.2"
+    js-tokens "^4.0.0"
 
 "@types/estree@0.0.39":
   version "0.0.39"
@@ -531,9 +545,9 @@ commander@^2.12.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
-commander@~2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
+commander@~2.17.1:
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 compare-versions@^3.1.0:
   version "3.3.0"
@@ -1642,6 +1656,10 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+js-tokens@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
 js-yaml@^3.7.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
@@ -2418,16 +2436,17 @@ rimraf@^2.5.4, rimraf@^2.6.1:
   dependencies:
     glob "^7.0.5"
 
-rollup-plugin-terser@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-1.0.1.tgz#ba5f497cbc9aa38ba19d3ee2167c04ea3ed279af"
+rollup-plugin-terser@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-2.0.2.tgz#1b59d67c80fc0d499cdc29a6991944b2d671ea03"
   dependencies:
-    "@babel/code-frame" "^7.0.0-beta.47"
-    terser "^3.7.5"
+    "@babel/code-frame" "^7.0.0"
+    jest-worker "^23.2.0"
+    terser "^3.8.2"
 
-rollup@^0.66.0:
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.66.0.tgz#697acc008f4b613695b17222c7626affddf4a506"
+rollup@^0.67.0:
+  version "0.67.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.67.0.tgz#16d4f259c55224dded6408e7666b7731500797a3"
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
@@ -2567,6 +2586,13 @@ source-map-support@^0.4.15:
 source-map-support@^0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map-support@~0.5.6:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.9.tgz#41bc953b2534267ea2d605bccfa7bfa3111ced5f"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -2741,12 +2767,13 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
 
-terser@^3.7.5:
-  version "3.7.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-3.7.6.tgz#0b3c609f22278c089780ac1cdc63627071e3b96a"
+terser@^3.8.2:
+  version "3.10.11"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-3.10.11.tgz#e063da74b194dde9faf0a561f3a438c549d2da3f"
   dependencies:
-    commander "~2.14.1"
+    commander "~2.17.1"
     source-map "~0.6.1"
+    source-map-support "~0.5.6"
 
 test-exclude@^4.2.1:
   version "4.2.1"
